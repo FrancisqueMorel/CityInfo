@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Mont";
+    src: url(../fonts/Mont/Montserrat-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-size: 1.1em;
+    font-family: "Mont", serif;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 480px;
+    height: 432px;
+    background-color: rgb(40, 73, 73);
+}
+
+.bandeau {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 480px!important;
+    height: 172px;
+    background-color: rgb(114, 151, 151);
+}
+#pluginlogo{
+    width:30%;
+}
+
+.bandeau img {
+    margin: 5px;
+}
+
+#date {
+    color: #ffffff;
+    margin: 5px;
+    text-align: center;
+}
+
+.meteo {
+    background-color: rgb(114, 151, 151) !important;
+    margin: 5px;
+}
+iframe{
+    border: 0px;
+}
+
+
+@-webkit-keyframes AutoSlide {
+    0% {
+        left: 0px;
+    }
+
+    28% {
+        left: 0px;
+    }
+
+    28.5% {
+        left: -480px;
+    }
+
+    60.5% {
+        left: -480px;
+    }
+
+    61% {
+        left: -968px;
+    }
+
+    64% {
+        left: -968px;
+    }
+
+    65.5% {
+        left: -990px;
+    }
+
+    93% {
+        left: -1640px;
+    }
+
+    95% {
+        left: -1660px;
+    }
+
+    99% {
+        left: -1660px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+
+@keyframes AutoSlide {
+    0% {
+        left: 0px;
+    }
+
+    28% {
+        left: 0px;
+    }
+
+    28.5% {
+        left: -480px;
+    }
+
+    60.5% {
+        left: -480px;
+    }
+
+    61% {
+        left: -968px;
+    }
+
+    64% {
+        left: -968px;
+    }
+
+    66% {
+        left: -998px;
+    }
+
+    93% {
+        left: -1640px;
+    }
+
+    95% {
+        left: -1660px;
+    }
+
+    99% {
+        left: -1660px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+#caroussel {
+    position: relative;
+    overflow: hidden;
+    width: 480px;
+    height: 260px;
+}
+
+#sContent {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+    /*CSS3 keyframes animation*/
+    -webkit-animation-name: AutoSlide;
+            animation-name: AutoSlide;
+    -webkit-animation-duration: 60s;
+            animation-duration: 60s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+}
+
+
+/***********************************************************************************************/
+
+
+/****************/
+/* RESPONSIVE TAB */
+/****************/
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {}
+
+@media screen and (max-width:767px) {}

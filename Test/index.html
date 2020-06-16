@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="test plugindesign">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Test Pugin Design</title>
+
+	<!-- Feuilles de style de l'application -->
+	<link rel="stylesheet" href="css/normalize-3.0.3.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<main>
+		<div class="maincontainer">
+			<div class="bandeau">
+				<img src="img/logo.png" id="pluginlogo" alt="logo plugindesign" />
+				<span id="date"></span>
+				<div class="meteo">
+					<iframe
+						src="https://www.meteo-lyon.net/widget/prevision-meteo?wgt=mini&amp;bg-clr=729696&amp;city=17"
+						style="width: 135px; height: 135px;"></iframe>
+				</div>
+			</div>
+
+			<div id="caroussel">
+				<ul id="sContent">
+					<li><img id="slide1" src="img/img169.jpg" width="480" height="260" alt="image16/9" /></li>
+					<li><video controls autoplay loop muted width="480" height="260">
+							<source
+								src="https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4"
+								type="video/mp4">
+							<source src="img/video.mp4" type="video/mp4"></video></li>
+					<!--<li><iframe width="480" height="260" src="https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4" autoplay="1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>-->
+					<li><img id="slide3" src="https://www.trinum.com/ibox/ftpcam/correncon_rambins.jpg" height="260"
+							alt="webcam" /></li>
+
+				</ul>
+			</div>
+		</div>
+	</main>
+
+	<!-- Optionnel JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
